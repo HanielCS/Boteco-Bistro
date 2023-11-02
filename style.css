@@ -1,0 +1,250 @@
+/* PRINCIPAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: rgba(14, 19, 23, 255);
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+#cabecalho {
+  position: relative;
+  margin: inherit;
+  height: auto;
+  background-color: #ffa200;
+}
+
+/* TEXTOS */
+
+#square {
+  width: auto;
+  height: 130px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffa200;
+}
+
+/* IMAGENS */
+
+#logo {
+  width: 100%;
+  height: auto;
+}
+
+/* CARDAPIO */
+
+#cardapio {
+  width: 30%;
+  height: auto;
+  margin: inherit;
+}
+
+#mostrarCardapio {
+  position: relative;
+  text-align: right;
+}
+
+/* SLIDES */
+
+.slideConteiner {
+  width: 90%  
+}
+
+.mySlides {
+  display: none;
+  max-width: 30%;
+  margin: inherit;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 2%;
+  top: 0;
+  left: -250px; /* Inicialmente oculta a barra lateral */
+  color: #000000;
+  transition: left 0.6s ease-in-out; /* Tempo de animação */
+  background-color: #ffa200;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  background-color: #ffa200;
+  padding: 10px;
+}
+
+/* Estilo para o botão de alternância */
+#botaoAlternar {
+  background-color: #ffa200;
+  width: 270px;
+  color: #ffffff;
+  border: solid;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+@import
+url(https://fontsgoogleapis.com/css?fmily=Open+Sans:400,500,300,700);
+
+.footer {
+  margin: 0;
+  background-color: #4d4a46;
+  height: 80%;
+  width: 100%;
+  padding: 55px 50px;
+  box-sizing: border-box;
+  text-align: center;
+  font: bold 16px sans-serif;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  width: 100%;
+}
+
+.footer h3 {
+  color: #ffffff;
+  margin: 0;
+  font: normal 36px 'Open Sans', cursive;
+}
+
+.footer h3 span {
+  color: #ffa200;
+}
+
+.footer .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer .footer-links a {
+  color: inherit;
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.footer .footer-company-name {
+  color: #ffa200;
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.footer .footer-center i {
+  color: #ffffff;
+  background-color: #ffa200;
+  width: 38px;
+  height: 38px;
+  margin: 10px 15px;
+  font-size: 25px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 42px;
+  border-radius: 50%;
+}
+
+.footer .footer-center p {
+  color: #ffffff;
+  display: inline-block;
+  margin: 0;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+.footer .footer-center p span {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2;
+}
+
+.footer .footer-center p a {
+  color: #ffa200;
+  text-decoration: none;
+}
+
+.footer .footer-links a:before {
+  color: #fff;
+  content: "|";
+  display: inline-block;
+  left: 0;
+  font-size: 20px;
+  font-weight: 300;
+  padding-right: 5px;
+}
+
+.footer .footer-links .link-1:before {
+  content: none;
+}
+
+.footer .footer-icons a {
+  color: #ffffff;
+  background-color: #ffa200;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 2px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* TORNAR O FOOTER RESPONSIVO */
+
+@media (max-width: 880px) {
+  .footer {
+    font: bold 14px sans-serif;
+  }
+
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .footer .footer-center i {
+    margin-left: 0;
+  }
+}
