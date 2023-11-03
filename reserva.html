@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title> Reserva </title>
 </head>
+
 <body>
-  <header id="cabecalho">
-    <img id="logo" src="imagens/boteco_bistro.jpg" alt="Logo do Boteco Bistrô">
-  </header>
-  <div class="sidebar">
-    <button id="botaoAlternar">|||</button>
-    <ul class="menu">
-      <li><a href="#">Menu</a></li>
-      <li><a href="reserva.html">Reservas</a></li>
-      <li><a href="#contato">Contato</a></li>
-      <li id="opcCardapio"><a href="#mostrarCardapio">Cardápio</a></li>
-    </ul>
-  </div>
+    <header id="cabecalho">
+        <img id="logo" src="imagens/boteco_bistro.jpg" alt="Logo do Boteco Bistrô">
+    </header>
+    <div class="sidebar">
+        <button id="botaoAlternar">|||</button>
+        <ul class="menu">
+            <li><a href="#">Menu</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li id="opcCardapio"><a href="#mostrarCardapio">Cardápio</a></li>
+        </ul>
+    </div>
     <form action="https://formsubmit.co/carvalho.hanielx@gmail.com" method="post">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="Nome" required><br><br>
@@ -43,37 +45,40 @@
         <textarea id="msg" name="mensagem" rows="4" cols="50"></textarea><br><br>
 
         <input type="submit" value="Enviar Reserva p/ E-mail">
-      <button type="button" onclick="abrirWhatsapp()" id="enviarWhatsapp"> Enviar Reserva p/ WhatsApp <i class="fa fa-whatsapp"></i></button>
+        <button type="button" onclick="abrirWhatsapp()" id="enviarWhatsapp"> Enviar Reserva p/ WhatsApp <i
+                class="fa fa-whatsapp"></i></button>
     </form>
-  <script src="reserva.js"></script>
-  <script src="sidebar.js"></script>
-  <footer class="footer" id="contato">
-    <div class="footer-left">
-      <h3>Boteco<span>Bistrô</span></h3>
-      <p class="footer-links">
-        <a href="#" class="link-1">Home</a>
-        <a href="#">Sobre Nós</a>
-        <a href="#">Contato</a>
-      </p>
-      <p class="footer-company-name">
-        Boteco Bistrô @ 2023
-      </p>
-    </div>
-    <div class="footer-center">
-      <div>
-        <i class="fa fa-map-marker"></i>
-        <p><span>R. Frei Caneca, 149</span>São JOÃO, Feira de Santana - BA 44050-388</p>
-      </div>
-      <div>
-        <i class="fa fa-phone"></i>
-        <p>75 99278 3169</p>
-      </div>
-    </div>
-    <div class="footer-right">
-      <div class="footer-icons">
-        <a href="https://www.instagram.com/botecobistro.fsa/" target="_blank"><i class="fa fa-instagram"></i></a>
-      </div>
-    </div>
-  </footer>
+    <footer class="footer" id="contato">
+        <div class="footer-left">
+            <h3>Boteco<span>Bistrô</span></h3>
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+                <a href="#">Sobre Nós</a>
+                <a href="#">Contato</a>
+            </p>
+            <p class="footer-company-name">
+                Boteco Bistrô @ 2023
+            </p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>R. Frei Caneca, 149</span>São JOÃO, Feira de Santana - BA 44050-388</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>75 99278 3169</p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/botecobistro.fsa/" target="_blank"><i
+                        class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="reserva.js"></script>
+    <script src="sidebar.js"></script>
 </body>
+
 </html>
