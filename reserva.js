@@ -1,6 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const enviarWhatsappButton = document.getElementById('enviarWhatsapp');
-
 function abrirWhatsapp() {
   var nome = document.getElementById("nome").value;
   var email = document.getElementById("email").value;
@@ -25,5 +22,3 @@ function abrirWhatsapp() {
   
   window.open(url, '_blank').focus();
 }
-  
-});
