@@ -9,17 +9,20 @@ function abrirWhatsapp() {
   var hora = document.getElementById("hora").value;
   var num_pessoas = document.getElementById("num_pessoas").value;
   var msg = document.getElementById("msg").value;
+
+  var num_telefone = "+5575991232281";
   
-  var url = "https://wa.me/5575991232281?text="
+  var url = "https://wa.me/" + num_telefone + "?text="
   + "*Formulário de Reserva*"
   + "%0a"
-  + "%0aNome: " + nome "%0a"
-  + "%0aEmail: " + email "%0a"
-  + "%0aTelefone: " + telefone "%0a"
-  + "%0aData: " + data "%0a"
-  + "%0aHora: " + hora "%0a"
-  + "%0aNúmero de pessoas: " + num_pessoas "%0a"
-  + "%0aMensagem: " + msg;
+  + "*Nome:* " + nome "%0a"
+  + "*Email:* " + email "%0a"
+  + "*Telefone:* " + telefone "%0a"
+  + "*Data:* " + data "%0a"
+  + "*Hora:* " + hora "%0a"
+  + "*Número de pessoas:* " + num_pessoas "%0a"
+  + "*Mensagem:* " + msg;
+  
   window.open(url, '_blank').focus();
 }
   
