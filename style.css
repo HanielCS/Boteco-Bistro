@@ -119,7 +119,7 @@ url(https://fontsgoogleapis.com/css?fmily=Open+Sans:400,500,300,700);
   padding: 55px 50px;
   box-sizing: border-box;
   text-align: center;
-  font: bold 16px sans-serif;
+  font: bold 14px sans-serif;
 }
 
 .footer .footer-left,
@@ -132,7 +132,7 @@ url(https://fontsgoogleapis.com/css?fmily=Open+Sans:400,500,300,700);
 .footer .footer-left,
 .footer .footer-center,
 .footer .footer-right {
-  width: 100%;
+  width: 45%;
 }
 
 .footer h3 {
