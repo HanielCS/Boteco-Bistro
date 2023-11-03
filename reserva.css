@@ -78,3 +78,26 @@ button {
   font-size: 18px;
   cursor: pointer;
 }
+
+/* SIDEBAR */
+
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 2%;
+  top: 0;
+  left: -250px; /* Inicialmente oculta a barra lateral */
+  color: #000000;
+  transition: left 0.6s ease-in-out; /* Tempo de animação */
+  background-color: #ffa200;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  background-color: #ffa200;
+  padding: 10px;
+}
