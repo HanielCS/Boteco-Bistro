@@ -3,9 +3,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'C:/Users/Janecleide/Desktop/FaculADS/Boteco-Bistro-main/Boteco-Bistro-main/vendor/phpmailer/phpmailer/src/Exception.php';
-require 'C:/Users/Janecleide/Desktop/FaculADS/Boteco-Bistro-main/Boteco-Bistro-main/vendor/phpmailer/phpmailer/src/PHPMailer.php';
-require 'C:/Users/Janecleide/Desktop/FaculADS/Boteco-Bistro-main/Boteco-Bistro-main/vendor/phpmailer/phpmailer/src/SMTP.php';
+require 'vendor/phpmailer/phpmailer/src/Exception';
+require 'vendor/phpmailer/phpmailer/src/PHPMailer';
+require 'vendor/phpmailer/phpmailer/src/SMTP.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone']) && isset($_POST['data']) && isset($_POST['hora']) && isset($_POST['num_pessoas']) && isset($_POST['mensagem'])) {
