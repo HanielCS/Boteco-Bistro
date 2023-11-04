@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Desktop/FaculADS/Boteco-Bistro-main/Boteco-Bistro-main/vendor"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}
