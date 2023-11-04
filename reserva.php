@@ -7,15 +7,15 @@ require 'vendor/phpmailer/phpmailer/src/Exception';
 require 'vendor/phpmailer/phpmailer/src/PHPMailer';
 require 'vendor/phpmailer/phpmailer/src/SMTP.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone']) && isset($_POST['data']) && isset($_POST['hora']) && isset($_POST['num_pessoas']) && isset($_POST['mensagem'])) {
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        $telefone = $_POST['telefone'];
-        $data = $_POST['data'];
-        $hora = $_POST['hora'];
-        $num_pessoas = $_POST['num_pessoas'];
-        $mensagem = $_POST['mensagem'];
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    if (isset($_GET['nome']) && isset($_GET['email']) && isset($_GET['telefone']) && isset($_GET['data']) && isset($_GET['hora']) && isset($_GET['num_pessoas']) && isset($_GET['mensagem'])) {
+        $nome = $_GET['nome'];
+        $email = $_GET['email'];
+        $telefone = $_GET['telefone'];
+        $data = $_GET['data'];
+        $hora = $_GET['hora'];
+        $num_pessoas = $_GET['num_pessoas'];
+        $mensagem = $_GET['mensagem'];
 
         $mail = new PHPMailer(true);
 
