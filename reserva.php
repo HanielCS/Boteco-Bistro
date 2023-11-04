@@ -1,4 +1,10 @@
 <?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require ''
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verifica se os campos do formulário estão definidos
     if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['telefone']) && isset($_POST['data']) && isset($_POST['hora']) && isset($_POST['num_pessoas']) && isset($_POST['mensagem'])) {
