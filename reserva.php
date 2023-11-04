@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $nome = addslashes($_POST['nome']);
         $email = addslashes($_POST['email']);
-        $telefone = addslashes$_POST(['telefone']);
+        $telefone = addslashes($_POST['telefone']);
         $data = addslashes($_POST['data']);
         $hora = addslashes($_POST['hora']);
         $num_pessoas = addslashes($_POST['num_pessoas']);
@@ -26,9 +26,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $body .= "Número de pessoas: " . $num_pessoas . "\n";
         $body .= "Mensagem: " . $mensagem . "\n";
 
-        $header = "From:contato.haniel.c@gmail.com"."\r\n".
-                  "Reply-To".$email."\r\n".
-                  "X=Mailer:PHP/".phpversion();
+        $header = "From: contato.haniel.c@gmail.com\r\n" .
+                  "Reply-To" . $email. "\r\n" .
+                  "X=Mailer:PHP/" . phpversion();
 
         if(mail($to, $subject, $body, $header)) {
             echo "E-mail enviado com sucesso!";
