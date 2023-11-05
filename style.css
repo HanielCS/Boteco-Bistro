@@ -75,11 +75,14 @@ a {
 
 .slideConteiner {
   width: 30%;
+  height: 720px; /* Tamanho ideal para evitar flutuação entre o slide e o footer */
 }
 
 .mySlides {
   display: none;
   max-width: 100%;
+  width: auto;
+  height: 100%;
   margin: inherit;
 }
 
