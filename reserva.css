@@ -112,6 +112,7 @@ button {
   color: #000000;
   transition: left 0.6s ease-in-out; /* Tempo de animação */
   background-color: #ffa200;
+  z-index: 1000; /* Impede a sobreposiçao de outros elementos sobre a barra */
 }
 
 .barraLateral ul {
@@ -125,6 +126,10 @@ button {
 .barraLateral li {
   background-color: #ffa200;
   padding: 10px;
+}
+
+.barraLateral li:hover {
+  color: #c8ff00;
 }
 
 /* Estilo para o botão de alternância */
