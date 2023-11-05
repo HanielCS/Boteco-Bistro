@@ -91,7 +91,17 @@ input[type="submit"]:hover {
   background-color: #0056b3;
 }
 
-button {
+#enviarEmail {
+  background-color: #2f89e9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#enviarWhatsapp {
   background-color: #53ee56;
   color: #fff;
   border: none;
@@ -99,6 +109,24 @@ button {
   border-radius: 4px;
   font-size: 18px;
   cursor: pointer;
+}
+
+#enviarEmail,
+#enviarWhatsapp {
+  display: inline-block;
+  margin: 10px;
+}
+
+#enviarEmail:hover {
+  background-color: #2564a7
+}
+#enviarWhatsapp:hover {
+  background-color: #42b844;
+}
+
+.fa-whatsapp,
+.fa-envelope-o {
+  margin-right: 5px;
 }
 
 /* Barra Lateral */
