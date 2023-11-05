@@ -2,29 +2,31 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
-    <title>Boteco Bistrô - Reserva</title>
-    <link href="reserva.css" rel="stylesheet" type="text/css">
-    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+  <title>Boteco Bistrô - Reserva</title>
+  <link href="reserva.css" rel="stylesheet" type="text/css">
+  <link href="footer.css" rel="stylesheet" type="text/css">
+  <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header id="cabecalho">
-        <img id="logo" src="imagens/boteco_bistro.jpg" alt="Logo do Boteco Bistrô">
-    </header>
-    <div class="sidebar">
-        <button id="botaoAlternar">|||</button>
-        <ul class="menu">
-            <li><a href="index.html">Página Principal</a></li>
-            <li><a href="reserva.html">Reservas</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li id="opcCardapio"><a href="#mostrarCardapio">Cardápio</a></li>
-        </ul>
-    </div>
-    <form action="https://formsubmit.co/carvalho.hanielx@gmail.com" method="POST">
+  <header id="cabecalho">
+    <img id="logo" src="imagens/boteco_bistro.jpg" alt="Logo do Boteco Bistrô">
+  </header>
+  <nav class="barraLateral">
+    <button id="botaoAlternar">|||</button>
+    <ul class="menu">
+      <li><a href="index.html">Página Principal</a></li>
+      <li><a href="cardapio.html">Cardápio</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+  <div id="linha"></div>
+    <div class="containerForm">
+      <form action="https://formsubmit.co/carvalho.hanielx@gmail.com" method="POST">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="Nome" required><br><br>
 
@@ -46,37 +48,37 @@
         <label for="mensagem">Mensagem Adicional:</label><br>
         <textarea id="msg" name="mensagem" rows="4" cols="50"></textarea><br><br>
 
-        <input type="submit" value="Enviar Reserva p/ E-mail"><br><br>
+        <input type="submit" value="Enviar Reserva p/ E-mail">
         <button type="button" onclick="abrirWhatsapp()" id="enviarWhatsapp"> Enviar Reserva p/ WhatsApp <i
-                class="fa fa-whatsapp"></i></button>
-    </form>
+            class="fa fa-whatsapp"></i></button>
+      </form>
+    </div>
     <footer class="footer" id="contato">
-        <div class="footer-left">
-            <h3>Boteco<span>Bistrô</span></h3>
-            <p class="footer-links">
-                <a href="#" class="link-1">Home</a>
-                <a href="#">Sobre Nós</a>
-                <a href="#">Contato</a>
-            </p>
-            <p class="footer-company-name">
-                Boteco Bistrô @ 2023
-            </p>
+      <div class="footer-left">
+        <h3>Boteco<span>Bistrô</span></h3>
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+          <a href="#">Sobre Nós</a>
+          <a href="#">Contato</a>
+        </p>
+        <p class="footer-company-name">
+          Boteco Bistrô @ 2023
+        </p>
+      </div>
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>R. Frei Caneca, 149</span>São JOÃO, Feira de Santana - BA 44050-388</p>
         </div>
-        <div class="footer-center">
-            <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span>R. Frei Caneca, 149</span>São JOÃO, Feira de Santana - BA 44050-388</p>
-            </div>
-            <div>
-                <i class="fa fa-phone"></i>
-                <p>75 99278 3169</p>
-            </div>
-            <div>
-                <a href="https://www.instagram.com/botecobistro.fsa/" target="_blank"><i
-                        class="fa fa-instagram"></i></a>
-                <p>botecobistro.fsa</p>
-            </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>75 99278 3169</p>
         </div>
+        <div>
+          <a href="https://www.instagram.com/botecobistro.fsa/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <p>botecobistro.fsa</p>
+        </div>
+      </div>
     </footer>
     <script src="reserva.js"></script>
     <script src="sidebar.js"></script>
