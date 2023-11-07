@@ -13,10 +13,11 @@
 </head>
 
 <body>
-  <header id="cabecalho">
+  <div class="grid-container">
+    <header class="cabecalho">
     <img id="logo" src="imagens/boteco_bistro.jpg" alt="Logo do Boteco Bistrô">
   </header>
-  <nav class="barraLateral">
+    <nav class="barraLateral">
     <button id="botaoAlternar">|||</button>
     <ul class="menu">
       <li><a class="linhaMenu" href="reserva.html"> <i class="fa fa-calendar-check-o"></i> Reservas</a></li>
@@ -24,8 +25,8 @@
       <li><a class="linhaMenu" href="#contato"> <i class="fa fa-phone"></i> Contato</a></li>
     </ul>
   </nav>
-  <div id="linha"></div>
-  <section class="secao">
+    <div id="linha"></div>
+    <section class="secao">
     <div class="slideConteiner">
       <img class="mySlides" src="imagens/carangueijo.jpg" alt="Carangueijo Dobrado">
       <img class="mySlides" src="imagens/roska.jpg" alt="Roska Dobrada">
@@ -43,7 +44,7 @@
       </div>
     </div>
   </section>
-  <footer class="footer" id="contato">
+    <footer class="footer" id="contato">
     <div class="footer-left">
       <h3>Boteco<span>Bistrô</span></h3>
       <p class="footer-links">
@@ -57,19 +58,18 @@
     </div>
     <div class="footer-center">
       <div>
-        <i class="fa fa-map-marker"></i>
-        <p><span>R. Frei Caneca, 149</span>São JOÃO, Feira de Santana - BA 44050-388</p>
+        <a href="https://maps.app.goo.gl/WKGmr4qcH6d3vELg7" target="_blank"><i class="fa fa-map-marker"></i><p><span>R. Frei Caneca, 149</span>São JOÃO, Feira de Santana - BA 44050-388</p></a>
       </div>
       <div>
         <i class="fa fa-phone"></i>
         <p>75 99278 3169</p>
       </div>
       <div>
-        <a href="https://www.instagram.com/botecobistro.fsa/" target="_blank"><i class="fa fa-instagram"></i></a>
-        <p>botecobistro.fsa</p>
+        <a href="https://www.instagram.com/botecobistro.fsa/" target="_blank"><i class="fa fa-instagram"></i><p>botecobistro.fsa</p></a>
       </div>
     </div>
   </footer>
+  </div>
   <script src="script.js"></script>
   <script src="sidebar.js"></script>
 </body>
