@@ -8,22 +8,28 @@
   <title>Boteco Bistrô - Cardápio</title>
   <link href="style.css" rel="stylesheet" type="text/css">
   <link href="footer.css" rel="stylesheet" type="text/css">
+  <link href="navbar.css" rel="stylesheet" type="text/css">
   <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+  <nav class="navbar">
+    <a href="index.html"><i class="fa fa-home"></i> Página Principal</a>
+    <div class="dropdown">  
+      <button class="dropbtn">Menu
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="cardapio.html"><i class="fa fa-cutlery"></i> Cardápio</a>
+        <a href="reserva.html"><i class="fa fa-calendar-check-o"></i> Reserva</a>
+        <a href="#contato"><i class="fa fa-phone"></i> Contato</a>
+      </div>
+    </div>  
+  </nav>
   <header id="cabecalho">
     <img id="logo" src="imagens/boteco_bistro.jpg" alt="Logo do Boteco Bistrô">
   </header>
-  <nav class="barraLateral">
-    <button id="botaoAlternar">|||</button>
-    <ul class="menu">
-      <li><a class="linhaMenu" href="index.html"> <i class="fa fa-home"></i> Página Principal</a></li>
-      <li><a class="linhaMenu" href="reserva.html"> <i class="fa fa-calendar-check-o"></i> Reserva</a></li>
-      <li><a class="linhaMenu" href="#contato"> <i class="fa fa-phone"></i> Contato</a></li>
-    </ul>
-  </nav>
   <div id="linha"></div>
   <div id="cardapioConteiner">
     <div id="mostrarCardapio">
@@ -47,17 +53,17 @@
         <a href="https://maps.app.goo.gl/WKGmr4qcH6d3vELg7" target="_blank"><i class="fa fa-map-marker"></i><p><span>R. Frei Caneca, 149</span>São JOÃO, Feira de Santana - BA 44050-388</p></a>
       </div>
       <div>
-        <i class="fa fa-phone"></i><p>75 99278 3169</p>
+        <i class="fa fa-phone"></i><p>75 99278-3169</p>
       </div>
       <div>
         <a href="https://www.instagram.com/botecobistro.fsa/" target="_blank"><i class="fa fa-instagram"></i><p>botecobistro.fsa</p></a>
       </div>
       <div>
-        <a href="https://www.ifood.com.br/delivery/feira-de-santana-ba/boteco-bistro-sao-joao/ad787027-7290-4e7d-afcd-c58c6809c357" target="_blank"><i class="fa fa-truck"></i><p>Delivery</p></a>
+        <a href="https://www.ifood.com.br/delivery/feira-de-santana-ba/boteco-bistro-sao-joao/ad787027-7290-4e7d-afcd-c58c6809c357" target="_blank"><i class="fa fa-truck"></i><p>iFood</p></a>
       </div>
     </div>
   </footer>
-  <script src="sidebar.js"></script>
+  <script src="navbar.js"></script>
 </body>
 
 </html>

@@ -20,6 +20,13 @@ function abrirWhatsapp() {
     "*Número de pessoas:* " + num_pessoas + "%0a" +
     "*Mensagem:* " + msg;
 
+  var btnWhatsapp = documnent.getElementById("enviarWhatsapp");
+  btnWhatsapp.disabled = true;
+
+  setTimeout(function() {
+    btnWhatsapp.disabled = false;
+  }, 5000);
+
   window.open(url, '_blank').focus();
 }
 

@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
   var myIndex = 0; // Variável para controlar o slide
   slide(); // Chamada de função para iniciar assim que a página for carregada
 
