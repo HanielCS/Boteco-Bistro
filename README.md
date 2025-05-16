@@ -1,4 +1,5 @@
 Boteco Bistrô
+
 Projeto acadêmico de um website para o restaurante fictício Boteco Bistrô, desenvolvido com foco em práticas de front-end utilizando HTML, CSS e JavaScript.
 
 📌 Visão Geral
@@ -20,9 +21,6 @@ CSS3: Estilização e layout responsivo.
 JavaScript: Funcionalidades interativas, como o menu de navegação e o formulário de reservas.
 
 📁 Estrutura do Projeto
-css
-Copiar
-Editar
 
 Boteco-Bistro/
 ├── index.html
@@ -44,15 +42,9 @@ Inclua aqui capturas de tela das páginas principais do site para ilustrar o des
 🔧 Como Executar o Projeto
 Clone o repositório:
 
-bash
-Copiar
-Editar
 git clone https://github.com/HanielCS/Boteco-Bistro.git
 Navegue até o diretório do projeto:
 
-bash
-Copiar
-Editar
 cd Boteco-Bistro
 Abra o arquivo index.html em seu navegador preferido.
 
