@@ -22,19 +22,21 @@ JavaScript: Funcionalidades interativas, como o menu de navegação e o formulá
 
 📁 Estrutura do Projeto
 
+
 Boteco-Bistro/
-├── index.html
-├── cardapio.html
-├── reserva.html
-├── style.css
-├── navbar.css
-├── footer.css
-├── reserva.css
-├── navbar.js
-├── reserva.js
-├── script.js
-└── imagens/
-    └── [imagens utilizadas no site]
+
+    ├── index.html
+    ├── cardapio.html
+    ├── reserva.html
+    ├── style.css
+    ├── navbar.css
+    ├── footer.css
+    ├── reserva.css
+    ├── navbar.js
+    ├── reserva.js
+    ├── script.js
+    └── imagens/
+        └── [imagens utilizadas no site]
 
 📷 Demonstração
 Inclua aqui capturas de tela das páginas principais do site para ilustrar o design e as funcionalidades.
