@@ -49,4 +49,4 @@ cd Boteco-Bistro
 Abra o arquivo index.html em seu navegador preferido.
 
 ## 📄 Licença
-Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
+Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](https://github.com/HanielCS/Boteco-Bistro/blob/main/LICENSE) para mais informações.
