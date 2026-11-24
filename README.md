@@ -1,52 +1,72 @@
-# Boteco Bistrô
+# Boteco Bistrô — Website Oficial
 
-Projeto acadêmico de um website para o restaurante fictício Boteco Bistrô, desenvolvido com foco em práticas de front-end utilizando HTML, CSS e JavaScript.
+Website institucional e interativo desenvolvido para o **Boteco Bistrô** (Feira de Santana — BA), unindo a identidade visual oficial da marca a uma arquitetura front-end moderna, responsiva, acessível e modular em **HTML5, CSS3 e JavaScript Vanilla (ES6+)**.
 
-## 📌 Visão Geral
-Este projeto simula a presença online de um restaurante, oferecendo páginas como:
+---
 
-Página Inicial (index.html): Apresenta o restaurante e seus destaques.
+## ✨ Principais Melhorias Implementadas
 
-Cardápio (cardapio.html): Exibe os pratos e bebidas disponíveis.
+1. **Identidade Visual Unificada & Design System (`tokens.css`)**:
+   - Paleta extraída diretamente da identidade da marca (`#0E1317` carvão profundo, `#C88A2E` dourado bistrô e `#FFA200` âmbar boteco), aplicada de forma consistente em todas as páginas (`index.html`, `cardapio.html` e `reserva.html`).
+   - Tipografia editorial com **Playfair Display** para títulos e **Plus Jakarta Sans** para leitura fluida, substituindo importações quebradas de fontes.
 
-Reserva (reserva.html): Permite que os clientes façam reservas online.
+2. **Cardápio Digital Interativo (`cardapio.html`)**:
+   - Digitalização completa de **mais de 70 itens** do cardápio oficial (Frutos do Mar, Caldos, Chapas, Regionais, Petiscos do Mar, Petiscos da Terra, Acompanhamentos, Drinks, Cervejas e Destilados).
+   - **Busca instantânea** por nome ou ingrediente e **filtros por categoria**.
+   - **Simulador de Comanda**: permite adicionar pratos/bebidas, ajustar quantidades, calcular o total estimado em `R$` e enviar o pedido diretamente para o WhatsApp oficial do restaurante, mantendo também um modal para visualização do cardápio impresso original (`cardapio.jpg`).
 
-O site é responsivo e utiliza JavaScript para interações dinâmicas, como o menu de navegação e o formulário de reservas.
+3. **Sistema de Reservas Validado (`reserva.html` & `reserva.js`)**:
+   - Correção do bug crítico (`documnent` -> `document`), unificação do número oficial de WhatsApp `(75) 99278-3169` e codificação segura via `encodeURIComponent()`.
+   - Validação completa de campos em tempo real, máscara automática para telefone brasileiro, bloqueio de datas retroativas, seleção de ambiente e modal de confirmação com resumo da reserva.
 
-## 🚀 Tecnologias Utilizadas
-HTML5: Estruturação das páginas.
+4. **Arquitetura Modular & Responsividade Mobile-First**:
+   - Separação clara entre estrutura (`*.html`), estilos (`assets/css/`), dados (`assets/js/data/`), scripts (`assets/js/`) e mídias (`assets/img/`).
+   - Navegação *sticky* com efeito *glassmorphism*, menu *hamburger* acessível (`aria-expanded`), carrossel interativo com controles e *lightbox* para os cartazes promocionais.
 
-CSS3: Estilização e layout responsivo.
+---
 
-JavaScript: Funcionalidades interativas, como o menu de navegação e o formulário de reservas.
+## 📁 Estrutura de Diretórios
 
-## 📁 Estrutura do Projeto
+```text
+Boteco-Bistro-Pro/
+├── index.html                  # Página inicial (Hero, Carrossel, Promoções, Pilares, Mapa)
+├── cardapio.html               # Cardápio digital pesquisável + Simulador de Comanda
+├── reserva.html                # Formulário de reserva validado (WhatsApp e E-mail)
+├── README.md                   # Documentação do projeto
+├── LICENSE                     # Licença MIT
+└── assets/
+    ├── css/
+    │   ├── tokens.css          # Variáveis globais (cores, fontes, sombras, espaçamentos)
+    │   ├── base.css            # Reset moderno, acessibilidade e botões reutilizáveis
+    │   ├── components.css      # Header sticky, footer, breadcrumbs, modais e toasts
+    │   └── pages.css           # Layouts específicos de Home, Cardápio e Reserva
+    ├── js/
+    │   ├── data/
+    │   │   └── menu-data.js    # Catálogo estruturado do cardápio e promoções
+    │   ├── layout.js           # Menu mobile, scroll suave, ano dinâmico e notificações
+    │   ├── home.js             # Carrossel acessível e modal de ampliação de cartazes
+    │   ├── cardapio.js         # Busca, filtros, comanda interativa e envio WhatsApp
+    │   └── reserva.js          # Validação, máscara de telefone e fluxo de reserva
+    └── img/
+        ├── boteco_bistro.jpg
+        ├── carangueijo.jpg
+        ├── cardapio.jpg
+        ├── combo_perfeito.jpg
+        ├── roska.jpg
+        └── tabua_camarao.jpg
+```
 
+---
 
-Boteco-Bistro/
+## 🚀 Como Executar
 
-    ├── index.html
-    ├── cardapio.html
-    ├── reserva.html
-    ├── style.css
-    ├── navbar.css
-    ├── footer.css
-    ├── reserva.css
-    ├── navbar.js
-    ├── reserva.js
-    ├── script.js
-    └── imagens/
-        └── [imagens utilizadas no site]
+Por utilizar **HTML5, CSS3 e JavaScript puro** (sem dependências de *build*), basta:
 
+1. Extrair o projeto e abrir `index.html` diretamente no navegador, **ou**
+2. Servir com qualquer servidor estático local (ex.: extensão *Live Server* no VS Code ou `python3 -m http.server 8080`).
 
-## 🔧 Como Executar o Projeto
-Clone o repositório:
-
-git clone https://github.com/HanielCS/Boteco-Bistro.git
-Navegue até o diretório do projeto:
-
-cd Boteco-Bistro
-Abra o arquivo index.html em seu navegador preferido.
+---
 
 ## 📄 Licença
-Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](https://github.com/HanielCS/Boteco-Bistro/blob/main/LICENSE) para mais informações.
+
+Distribuído sob a licença **MIT**. Consulte o arquivo `LICENSE` para mais detalhes.

@@ -1,93 +1,256 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
-  <title>Boteco Bistrô - Reserva</title>
-  <link href="reserva.css" rel="stylesheet" type="text/css">
-  <link href="footer.css" rel="stylesheet" type="text/css">
-  <link href="navbar.css" rel="stylesheet" type="text/css">
-  <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0e1317">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1317'/%3E%3Cpath d='M16 24l8 8 8-12 8 12 8-8-3 18H19z' fill='none' stroke='%23c88a2e' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <meta name="description" content="Faça sua reserva de mesa online no Boteco Bistrô em Feira de Santana via WhatsApp ou E-mail.">
+  <title>Boteco Bistrô | Reserva de Mesas Online</title>
 </head>
-
 <body>
-  <nav class="navbar">
-    <a href="index.html"><i class="fa fa-home"></i> Página Principal</a>
-    <div class="dropdown">
-      <button class="dropbtn">Menu
-        <i class="fa fa-caret-down"></i>
+  <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand" aria-label="Boteco Bistrô - Página Inicial">
+        <img src="assets/img/boteco_bistro.jpg" alt="Logo Boteco Bistrô" class="brand-logo">
+        <span class="brand-text">
+          <span class="brand-name">Bôteco</span>
+          <span class="brand-tagline">Bistrô</span>
+        </span>
+      </a>
+
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu de navegação">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
       </button>
-      <div class="dropdown-content">
-        <a href="cardapio.html"><i class="fa fa-cutlery"></i> Cardápio</a>
-        <a href="reserva.html"><i class="fa fa-calendar-check-o"></i> Reserva</a>
-        <a href="#contato"><i class="fa fa-phone"></i> Contato</a>
-      </div>
-    </div>  
-  </nav>
-  <header id="cabecalho">
-    <img id="logo" src="imagens/boteco_bistro.jpg" alt="Logo do Boteco Bistrô">
-  </header>
-  <div id="linha"></div>
-  <div class="containerForm">
-    <form id="formReserva" action="https://formsubmit.co/carvalho.hanielx@gmail.com" method="POST">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="Nome" required><br><br>
 
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="E-mail" required><br><br>
-
-      <label for="telefone">Telefone:</label>
-      <input type="tel" id="telefone" name="Telefone" required><br><br>
-
-      <label for="data">Data da Reserva:</label>
-      <input type="date" id="data" name="Data" required><br><br>
-
-      <label for="hora">Horário da Reserva:</label>
-      <input type="time" id="hora" name="Hora" required><br><br>
-
-      <label for="num_pessoas">Número de Pessoas:</label>
-      <input type="number" id="num_pessoas" name="Número de pessoas" min="1" required><br><br>
-
-      <label for="mensagem">Mensagem Adicional:</label><br>
-      <textarea id="msg" name="mensagem" rows="4" cols="50"></textarea><br><br>
-
-      <button type="submit" id="enviarEmail"> Enviar Reserva p/ E-mail <i class="fa fa-envelope-o"></i></button> 
-      <button type="submit" id="enviarWhatsapp" onclick="abrirWhatsapp()"> Enviar Reserva p/ WhatsApp <i
-            class="fa fa-whatsapp"></i></button>
-      </form>
+      <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
+        <a href="index.html" class="nav-link"><i class="fa-solid fa-house" aria-hidden="true"></i> Início</a>
+        <a href="cardapio.html" class="nav-link"><i class="fa-solid fa-utensils" aria-hidden="true"></i> Cardápio</a>
+        <a href="reserva.html" class="nav-link" aria-current="page"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Reservas</a>
+        <a href="#contato" class="nav-link"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Contato</a>
+        <a href="reserva.html" class="btn btn-primary btn-sm nav-cta">Reservar Mesa</a>
+      </nav>
     </div>
-    <footer class="footer" id="contato">
-      <div class="footer-left">
-        <h3>Boteco<span>Bistrô</span></h3>
-        <p class="footer-links">
-          <a href="#" class="link-1">Home</a>
-          <a href="#">Sobre Nós</a>
-          <a href="#">Contato</a>
-        </p>
-        <p class="footer-company-name">
-          Boteco Bistrô @ 2023
-        </p>
-      </div>
-      <div class="footer-center">
-        <div>
-          <a href="https://maps.app.goo.gl/WKGmr4qcH6d3vELg7" target="_blank"><i class="fa fa-map-marker"></i><p><span>R. Frei Caneca, 149</span>São JOÃO, Feira de Santana - BA 44050-388</p></a>
-        </div>
-        <div>
-          <i class="fa fa-phone"></i><p>75 99278-3169</p>
-        </div>
-        <div>
-          <a href="https://www.instagram.com/botecobistro.fsa/" target="_blank"><i class="fa fa-instagram"></i><p>botecobistro.fsa</p></a>
-        </div>
-        <div>
-          <a href="https://www.ifood.com.br/delivery/feira-de-santana-ba/boteco-bistro-sao-joao/ad787027-7290-4e7d-afcd-c58c6809c357" target="_blank"><i class="fa fa-truck"></i><p>iFood</p></a>
-        </div>
-      </div>
-    </footer>
-    <script src="reserva.js"></script>
-    <script src="navbar.js"></script>
-</body>
+  </header>
 
+  <main id="conteudo-principal">
+    <section class="page-banner">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Caminho de navegação">
+          <a href="index.html">Início</a>
+          <span aria-hidden="true">/</span>
+          <span>Reserva de Mesas</span>
+        </nav>
+        <h1>Reserve Sua Mesa</h1>
+        <p>Preencha os dados abaixo para solicitar sua reserva rapidamente pelo WhatsApp oficial ou por e-mail.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 40px;">
+      <div class="container reservation-grid">
+        <!-- Formulário de Reserva -->
+        <div class="form-card">
+          <form id="formReserva" action="https://formsubmit.co/carvalho.hanielx@gmail.com" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="Nova Solicitação de Reserva — Boteco Bistrô">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-grid">
+              <div class="form-group full-width">
+                <label class="form-label" for="nome">Nome Completo <span class="req">*</span></label>
+                <input type="text" class="form-control" id="nome" name="Nome" placeholder="Ex.: João da Silva" required>
+                <span class="field-error" id="err-nome" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">E-mail <span class="req">*</span></label>
+                <input type="email" class="form-control" id="email" name="E-mail" placeholder="voce@exemplo.com" required>
+                <span class="field-error" id="err-email" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="telefone">Telefone / WhatsApp <span class="req">*</span></label>
+                <input type="tel" class="form-control" id="telefone" name="Telefone" placeholder="(75) 99999-9999" required>
+                <span class="field-error" id="err-telefone" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="data">Data da Reserva <span class="req">*</span></label>
+                <input type="date" class="form-control" id="data" name="Data" required>
+                <span class="field-error" id="err-data" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="hora">Horário <span class="req">*</span></label>
+                <input type="time" class="form-control" id="hora" name="Hora" value="19:30" required>
+                <span class="field-error" id="err-hora" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="num_pessoas">Número de Pessoas <span class="req">*</span></label>
+                <input type="number" class="form-control" id="num_pessoas" name="Número de pessoas" min="1" max="40" value="4" required>
+                <span class="field-error" id="err-num_pessoas" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="ambiente">Preferência de Ambiente</label>
+                <select class="form-control" id="ambiente" name="Ambiente">
+                  <option value="Salão Principal">Salão Principal</option>
+                  <option value="Área Externa / Varanda">Área Externa / Varanda</option>
+                  <option value="Aniversário / Confraternização">Aniversário / Confraternização</option>
+                </select>
+                <span class="field-error" aria-hidden="true"></span>
+              </div>
+
+              <div class="form-group full-width">
+                <label class="form-label" for="msg">Observações Adicionais</label>
+                <textarea class="form-control" id="msg" name="Mensagem" rows="4" placeholder="Informe se é aniversário, preferência de mesa ou alguma restrição alimentar..."></textarea>
+              </div>
+            </div>
+
+            <div class="form-submit-row">
+              <button type="button" class="btn btn-whatsapp" id="enviarWhatsapp">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Enviar via WhatsApp
+              </button>
+              <button type="submit" class="btn btn-email" id="enviarEmail">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i> Enviar por E-mail
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Informações Laterais -->
+        <aside class="reservation-aside">
+          <div class="aside-box">
+            <h3>Informações Importantes</h3>
+            <ul class="policy-list">
+              <li>
+                <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                <span>Tolerância de <strong>15 minutos</strong> após o horário agendado para manutenção da mesa.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-cake-candles" aria-hidden="true"></i>
+                <span>Comemorando aniversário? Avise nas observações para prepararmos uma recepção especial.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-users" aria-hidden="true"></i>
+                <span>Para grupos acima de 15 pessoas, recomendamos confirmar com pelo menos 24h de antecedência.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="aside-box">
+            <h3>Atendimento Direto</h3>
+            <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 16px;">
+              Prefere falar diretamente com nossa equipe? Chame no WhatsApp oficial:
+            </p>
+            <a href="https://wa.me/5575992783169" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" style="width: 100%;">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> (75) 99278-3169
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal de Confirmação / Resumo da Reserva -->
+  <div class="modal-backdrop" id="bookingConfirmModal" role="dialog" aria-modal="true" aria-labelledby="bookingModalTitle">
+    <div class="modal-dialog" style="max-width: 520px;">
+      <div class="modal-header">
+        <h3 class="modal-title" id="bookingModalTitle"><i class="fa-solid fa-circle-check" style="color: var(--color-success);" aria-hidden="true"></i> Solicitação Preparada</h3>
+        <button type="button" class="modal-close" id="closeBookingModal" aria-label="Fechar resumo">
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+      </div>
+      <p style="color: var(--text-secondary); font-size: 0.93rem;">
+        Confira abaixo o resumo da sua solicitação de reserva enviada para o <strong>Boteco Bistrô</strong>:
+      </p>
+      <div class="summary-box" id="bookingSummaryBox"></div>
+      <button type="button" class="btn btn-primary" style="width: 100%;" onclick="document.getElementById('bookingConfirmModal').classList.remove('is-open')">
+        Concluir
+      </button>
+    </div>
+  </div>
+
+  <footer class="site-footer" id="contato">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="assets/img/boteco_bistro.jpg" alt="Boteco Bistrô" class="footer-brand-logo" loading="lazy">
+          <p class="footer-desc">
+            Onde a descontração do boteco baiano encontra o cuidado gastronômico de um bistrô em Feira de Santana.
+          </p>
+          <div class="footer-socials" aria-label="Redes sociais e delivery">
+            <a href="https://www.instagram.com/botecobistro.fsa/" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Instagram @botecobistro.fsa">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://wa.me/5575992783169" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="WhatsApp Boteco Bistrô">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.ifood.com.br/delivery/feira-de-santana-ba/boteco-bistro-sao-joao/ad787027-7290-4e7d-afcd-c58c6809c357" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Pedir no iFood">
+              <i class="fa-solid fa-motorcycle" aria-hidden="true"></i>
+            </a>
+            <a href="https://maps.app.goo.gl/WKGmr4qcH6d3vELg7" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Ver no Google Maps">
+              <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Navegação</h3>
+          <ul class="footer-nav">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right" aria-hidden="true"></i> Página Principal</a></li>
+            <li><a href="cardapio.html"><i class="fa-solid fa-angle-right" aria-hidden="true"></i> Cardápio Digital</a></li>
+            <li><a href="reserva.html"><i class="fa-solid fa-angle-right" aria-hidden="true"></i> Reserva de Mesas</a></li>
+            <li><a href="https://www.ifood.com.br/delivery/feira-de-santana-ba/boteco-bistro-sao-joao/ad787027-7290-4e7d-afcd-c58c6809c357" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-angle-right" aria-hidden="true"></i> Delivery pelo iFood</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Endereço & Atendimento</h3>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <span class="footer-contact-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+              <div>
+                <a href="https://maps.app.goo.gl/WKGmr4qcH6d3vELg7" target="_blank" rel="noopener noreferrer">
+                  <strong>R. Frei Caneca, 149</strong><br>
+                  São João, Feira de Santana - BA, 44050-388
+                </a>
+              </div>
+            </li>
+            <li class="footer-contact-item">
+              <span class="footer-contact-icon"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></span>
+              <div>
+                <a href="https://wa.me/5575992783169" target="_blank" rel="noopener noreferrer">(75) 99278-3169</a>
+              </div>
+            </li>
+            <li class="footer-contact-item">
+              <span class="footer-contact-icon"><i class="fa-brands fa-instagram" aria-hidden="true"></i></span>
+              <div>
+                <a href="https://www.instagram.com/botecobistro.fsa/" target="_blank" rel="noopener noreferrer">@botecobistro.fsa</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> Boteco Bistrô. Todos os direitos reservados.</p>
+        <p>Feira de Santana — Bahia</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data/menu-data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/reserva.js"></script>
+</body>
 </html>
